@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Energy App Power Shout</title>
+  <link rel="stylesheet" href="../css/app.css">
+</head>
+<body>
+  <div class="content">
+    <h1>ENERGY APP POWER SHOUT</h1>
+    <p></p>
+    <p class="tagline">Power Shout Submission Form</p>
+  </div>
+    <div class="form">
+    <form action="http://localhost:8080/" method="POST">
+      <a class="button" target="_blank" rel="noopener noreferrer" href="/">Sign In</a>
+       <span>First Sign In to Register Your Shout-Out Request</span><br><br>
+      <label for="token">Copy and Paste the token ID here</label>
+      <input name="token" type="text" placeholder="must be like this Jw65AJg05xiOGmkCld...">
+      <input type="submit" value="Request for Event">
+    </form>
+    <hr>
+    <form action="http://localhost:8080/events" method="POST">
+      <label for="client email">User email</label>
+      <input type="email" name="to" placeholder="send email to...">
+      <label for="event title">Power Shout Event Title</label>
+      <input type="text" name="summary" placeholder="the title of event...">
+      <label for="body">Event Description</label>
+      <input type="text" name="description" placeholder="the message body...">
+      <label for="start date">Select Date/Time</label>
+      <input type="datetime-local" class="Date" id="taskDate" name="date">
+      <input type="submit" value="Submit Event">
+    </form>
+  </div>
+</body>
+</html>
